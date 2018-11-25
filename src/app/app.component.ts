@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'mi app cacharreando';
+  city = 'Madrid';
+  result = 0;
+
+  suma($event: number) {
+    this.result = $event;
+  }
+
 }

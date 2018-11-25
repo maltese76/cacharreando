@@ -18,3 +18,18 @@
   </li>
 </ul>
 
+<app-nuevo-componente></app-nuevo-componente>
+<br>
+resultado: {{result}}
+
+<br>
+
+<router-outlet></router-outlet>
+<a [routerLink]="['/patheo']">enlace</a>
+<br>
+<a [routerLink]="['/']">enlace 2</a>
+
+
+
+<app-patheo [ciudad]="city" (outputContador)="suma($event)"></app-patheo>
+
